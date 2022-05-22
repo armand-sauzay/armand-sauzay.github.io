@@ -1,9 +1,9 @@
 {
-  "main.js": "/static/js/main.d2175549.chunk.js",
-  "main.js.map": "/static/js/main.d2175549.chunk.js.map",
-  "runtime~main.js": "/static/js/runtime~main.d53d57e4.js",
-  "runtime~main.js.map": "/static/js/runtime~main.d53d57e4.js.map",
-  "index.html": "/index.html",
-  "precache-manifest.b33afcbac352f7565ebec7e644fbe495.js": "/precache-manifest.b33afcbac352f7565ebec7e644fbe495.js",
-  "service-worker.js": "/service-worker.js"
+  "main.js": "/armand-sauzay.github.io/static/js/main.d2175549.chunk.js",
+  "main.js.map": "/armand-sauzay.github.io/static/js/main.d2175549.chunk.js.map",
+  "runtime~main.js": "/armand-sauzay.github.io/static/js/runtime~main.c08a46fc.js",
+  "runtime~main.js.map": "/armand-sauzay.github.io/static/js/runtime~main.c08a46fc.js.map",
+  "index.html": "/armand-sauzay.github.io/index.html",
+  "precache-manifest.826f6fef6a42d2cc99707b04c8df5482.js": "/armand-sauzay.github.io/precache-manifest.826f6fef6a42d2cc99707b04c8df5482.js",
+  "service-worker.js": "/armand-sauzay.github.io/service-worker.js"
 }
