@@ -8,7 +8,7 @@ self.__precacheManifest = [
     "url": "/armand-sauzay.github.io/static/js/runtime~main.c08a46fc.js"
   },
   {
-    "revision": "d5c1d32a5c57dad8415648951863ae04",
+    "revision": "b2e1ec291edc4de6a60f801223803007",
     "url": "/armand-sauzay.github.io/index.html"
   }
 ];
