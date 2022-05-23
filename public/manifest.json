@@ -2,7 +2,7 @@
     "name": "Armand Sauzay",
     "icons": [
         {
-            "src": "/images/favicon.ico",
+            "src": "favicon.ico",
             "sizes": "32x32",
             "type": "image/x-icon"
         }
