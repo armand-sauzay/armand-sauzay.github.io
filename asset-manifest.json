@@ -1,9 +1,13 @@
 {
-  "main.js": "/armand-sauzay.github.io/static/js/main.d2175549.chunk.js",
-  "main.js.map": "/armand-sauzay.github.io/static/js/main.d2175549.chunk.js.map",
-  "runtime~main.js": "/armand-sauzay.github.io/static/js/runtime~main.c08a46fc.js",
-  "runtime~main.js.map": "/armand-sauzay.github.io/static/js/runtime~main.c08a46fc.js.map",
-  "index.html": "/armand-sauzay.github.io/index.html",
-  "precache-manifest.1746fb99fa5145edf4c84e4e76a5b32e.js": "/armand-sauzay.github.io/precache-manifest.1746fb99fa5145edf4c84e4e76a5b32e.js",
-  "service-worker.js": "/armand-sauzay.github.io/service-worker.js"
+  "files": {
+    "main.css": "/static/css/main.1bee55f6.css",
+    "main.js": "/static/js/main.a6e3a6b0.js",
+    "index.html": "/index.html",
+    "main.1bee55f6.css.map": "/static/css/main.1bee55f6.css.map",
+    "main.a6e3a6b0.js.map": "/static/js/main.a6e3a6b0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1bee55f6.css",
+    "static/js/main.a6e3a6b0.js"
+  ]
 }
