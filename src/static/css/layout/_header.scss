@@ -1,0 +1,62 @@
+#header {
+    // width: 200 px;
+    background-color: _palette(white);
+    display: flex;
+    position: relative;
+    // height: 3.5 em;
+    align-items: center;
+    border: .5px solid _palette(foggy);
+    margin-bottom: _size(section-spacing);
+    padding-left: 2em;
+    padding-right: 2em;
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    .navigation-bar .hamburger {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        right: 3%;
+        font-size: 1em;
+        color: _palette(foggy);
+
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        display: flex;
+
+        li {
+            margin: 10px;
+        }
+    }
+
+    div {
+        text-decoration: none;
+        color: _palette(foggy);
+        font-family:
+            _font(base);
+
+    }
+
+    div:hover {
+        color: _palette(rausch);
+        text-decoration: none;
+    }
+
+    #surname {
+        color: _palette(foggy);
+        font-family:
+            _font(kosugi)
+    }
+
+    .navigation-bar {
+        display: flex;
+        align-items: center
+    }
+}

@@ -1,0 +1,125 @@
+/* Footer */
+#footer {
+  background-color: #ffffff;
+  border-top: 0.5px solid #767676;
+  text-align: center;
+}
+
+#footer ul {
+  display: inline-block;
+}
+
+#footer li {
+  list-style-type: none;
+}
+
+#footer .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#footer .copyright {
+  color: #767676;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 0.5em;
+  text-transform: lowercase;
+  text-align: center;
+}
+
+#header {
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  height: 100 px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 0.5px solid #767676;
+}
+
+#header ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#header ul li {
+  margin: 6px;
+}
+
+#header div {
+  text-decoration: none;
+  color: #767676;
+  font-family: "Montserrat", sans-serif;
+}
+
+#header div:hover {
+  color: #FF5A5F;
+  text-decoration: none;
+}
+
+#header #surname {
+  color: #767676;
+  font-family: "Kosugi Maru", sans-serif;
+}
+
+#header .navigation-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#header .navigation-bar .hamburger {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  right: 3%;
+  font-size: 2.5em;
+  color: #767676;
+}
+
+#main {
+  background-color: #ffffff;
+}
+
+#main .icons {
+  list-style-type: none;
+}
+
+.icon {
+  text-decoration: none;
+  border-bottom: none;
+  position: relative;
+}
+
+.icon:before {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: none !important;
+}
+
+.icon > .label {
+  display: none;
+}
+
+.icon.suffix:before {
+  float: right;
+}
+/*# sourceMappingURL=main.css.map */

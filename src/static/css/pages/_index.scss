@@ -1,0 +1,35 @@
+article {
+    #title {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #description {
+        margin: 1em;
+    }
+
+
+    img {
+        // position: relative;
+        margin-left: 3em;
+        margin-right: 3em;
+        height: 15em;
+        max-width: 100%;
+        float: right;
+    }
+
+    p {
+        padding-right: 10em;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+
+    ul {
+        display: flex;
+
+        li {
+            margin-left: 2em
+        }
+    }
+}

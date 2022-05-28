@@ -1,0 +1,16 @@
+#main {
+    background-color: _palette(white);
+
+    .icons {
+        list-style-type: none;
+    }
+
+    a {
+        color: inherit;
+        text-decoration-style: dotted;
+    }
+
+    a:hover {
+        color: _palette(rausch)
+    }
+}
