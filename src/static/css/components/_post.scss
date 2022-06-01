@@ -1,13 +1,15 @@
 .post {
     background: _palette(white);
     border: solid .5px _palette(foggy);
-    position: relative;
+    border-radius: 20px;
     padding: 1em;
     font-family: _font(montserrat);
     color: _palette(foggy);
 
     >header {
-        border-bottom: solid 1px _palette(rausch);
+        // border-bottom: solid 1px _palette(rausch);
+        // padding: 10em;
         position: relative;
+
     }
 }

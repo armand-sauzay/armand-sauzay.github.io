@@ -1,0 +1,24 @@
+article.post#about {
+    img {
+        // position: relative;
+        margin-left: 3em;
+        margin-right: 3em;
+        height: 25em;
+        max-width: 100%;
+        float: right;
+    }
+
+    p {
+        padding-right: 10em;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+
+    ul {
+        display: flex;
+
+        li {
+            margin-left: 2em
+        }
+    }
+}

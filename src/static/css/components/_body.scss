@@ -1,3 +1,24 @@
 body {
-    background-color: _palette(broken-white);
+    background-color: _palette(off-white);
+
+    ul {
+        display: flex;
+        margin: 1em;
+        padding: 0;
+        justify-content: center;
+
+        li {
+            list-style-type: none;
+            margin-right: 1em;
+        }
+    }
+
+    a {
+        color: inherit;
+        text-decoration: none
+    }
+
+    a:hover {
+        color: _palette(rausch)
+    }
 }

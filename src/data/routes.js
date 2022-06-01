@@ -1,10 +1,9 @@
 const routes = [
-    {
-        index: true,
-        label: "Armand Sauzay",
-        path: '/',
-    },
 
+    {
+        label: 'About',
+        path: '/about',
+    },
     {
         label: 'Projects',
         path: '/projects',
@@ -12,6 +11,11 @@ const routes = [
     {
         label: 'Tutorials',
         path: '/tutorials',
+    },
+    {
+        index: true,
+        label: "Armand Sauzay",
+        path: '/',
     },
 ];
 
