@@ -9,16 +9,18 @@ article.post#about {
     }
 
     p {
-        padding-right: 10em;
-        margin-top: 2em;
-        margin-bottom: 2em;
+        padding-right: 5em;
+        margin: 2em;
+        padding: 1em
     }
 
-    ul {
-        display: flex;
+    a {
+        text-decoration: underline;
+        text-decoration-style: dotted;
+    }
 
-        li {
-            margin-left: 2em
-        }
+    .icons {
+        font-size: 2em;
+        margin: 1em
     }
 }
