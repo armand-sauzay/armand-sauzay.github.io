@@ -5,16 +5,14 @@
     margin-bottom: _size(section-spacing);
     padding-left: 1em;
     padding-right: 1em;
-    border: .5px solid _palette(foggy);
-    justify-content: center;
+    // border: .5px solid _palette(foggy);
     border-radius: 20px;
+    justify-content: space-between;
 
     .navigation-bar .hamburger {
         cursor: pointer;
-        position: absolute;
-        right: 4.5em;
-        font-size: 1em;
         color: _palette(foggy);
+
 
     }
 

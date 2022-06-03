@@ -1,5 +1,17 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#root {
+    height: 99%;
+}
+
 body {
     background-color: _palette(off-white);
+    font: font(montserrat);
     margin: 1em 2em;
 
     ul {
@@ -22,4 +34,9 @@ body {
     a:hover {
         color: _palette(rausch)
     }
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
 }

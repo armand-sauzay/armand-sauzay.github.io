@@ -14,7 +14,7 @@ const routes = [
     },
     {
         index: true,
-        label: "Armand Sauzay",
+        label: "Home",
         path: '/',
     },
 ];

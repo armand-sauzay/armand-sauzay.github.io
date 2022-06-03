@@ -1,0 +1,34 @@
+// article#conda-env-tutorial.post 
+article#conda-env-tutorial.post {
+    h1 {
+        text-align: center;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        margin: 1em;
+
+
+        li {
+            list-style-type: circle;
+            margin-right: 1em;
+            margin: 1em
+        }
+
+    }
+
+    code {
+        background-color: _palette(peach);
+        font-family: _font(fira);
+        font-weight: 100;
+        border-radius: 1em;
+        // color: _palette(white);
+    }
+
+    pre {
+        border-radius: 1em;
+        background-color: _palette(peach);
+        padding: 1em
+    }
+}

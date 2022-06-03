@@ -12,13 +12,13 @@ const Main = (props) => (
             {props.title && <title>{props.title}</title>}
             <meta name="description" content={props.description} />
         </Helmet>
-        <div id="wrapper">
-            <Header />
-            <div id="main">
-                {props.children}
-            </div>
-            {props.fullPage ? null : <Footer />}
+        {/* <div id="wrapper"> */}
+        <Header />
+        <div id="main">
+            {props.children}
         </div>
+        {props.fullPage ? null : <Footer />}
+        {/* </div> */}
     </HelmetProvider>
 );
 

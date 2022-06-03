@@ -24,9 +24,8 @@ const NavigationBar = () => {
 
     return (
         <div className='navigation-bar'>
-            {open ? closeIcon : hamburgerIcon}
-
             {open && <NavigationLinks closeMenu={closeMenu} />}
+            {open ? closeIcon : hamburgerIcon}
 
         </div>
     );
