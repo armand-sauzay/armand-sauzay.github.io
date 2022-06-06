@@ -12,7 +12,7 @@ const Index = () => {
                     <div className="title">
                         <h2 data-testid="heading">Hi, I&#39;m Armand 👋<span id="fancy">.</span></h2>
                         <p>
-                            This website is a work in progress. Tutorials and projects are coming soon.
+                            This website is a work in progress.
                         </p>
                         <ContactIcons />
                     </div>
