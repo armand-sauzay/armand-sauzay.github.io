@@ -1,5 +1,3 @@
-import { Github, Linkedin, Mail } from "lucide-react"
-import Link from "next/link"
 import Header from "../components/Header"
 import SocialLinks from "../components/SocialLinks"
 

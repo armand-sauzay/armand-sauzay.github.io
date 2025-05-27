@@ -12,14 +12,14 @@ async function fetchMarkdown(url: string) {
   return res.text()
 }
 
-function resolveGithubImageUrl(src: string, markdownUrl: string) {
-  if (/^https?:\/\//.test(src)) return src;
-  const base = markdownUrl.replace(/\/[^\/]+$/, "/");
-  return base + src.replace(/^\.?\//, "");
-}
-
-export default async function ProjectDetailPage({ params }: { params: { slug: string } }) {
-  const project = projects.find(p => p.slug === params.slug)
+export default async function ProjectDetailPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>
+}) {
+  const { slug } = await params;
+  const project = projects.find(p => p.slug === slug);
+  
   if (!project) {
     return (
       <div className="min-h-screen flex flex-col">
@@ -30,7 +30,8 @@ export default async function ProjectDetailPage({ params }: { params: { slug: st
       </div>
     )
   }
-  const markdown = await fetchMarkdown(project.markdownUrl)
+  
+  const markdown = await fetchMarkdown(project.markdownUrl);
   return (
     <div className="min-h-screen flex flex-col">
       <Header />

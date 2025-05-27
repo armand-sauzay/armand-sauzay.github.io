@@ -1,16 +1,14 @@
 "use client";
-import { useState, ReactNode } from "react";
+import { useState, ComponentPropsWithoutRef } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import rehypeRaw from "rehype-raw";
+import rehypeSlug from "rehype-slug";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { oneLight } from "react-syntax-highlighter/dist/esm/styles/prism";
 
-interface CodeProps {
+type CodeProps = ComponentPropsWithoutRef<'code'> & {
   inline?: boolean;
-  className?: string;
-  children?: ReactNode;
-  [key: string]: any;
 }
 
 function CodeBlock({ inline, className, children, ...props }: CodeProps) {
@@ -63,7 +61,10 @@ function CodeBlock({ inline, className, children, ...props }: CodeProps) {
           </svg>
         )}
       </button>
-      <SyntaxHighlighter style={oneLight} language={match[1]} {...props}>
+      <SyntaxHighlighter 
+        style={oneLight} 
+        language={match[1]}
+      >
         {codeString}
       </SyntaxHighlighter>
     </div>
@@ -75,11 +76,11 @@ export default function MarkdownDisplay({ markdown, markdownUrl }: { markdown: s
     <article className="prose prose-neutral max-w-2xl mx-auto p-6 prose-pre:border-0">
       <ReactMarkdown
         remarkPlugins={[remarkGfm]}
-        rehypePlugins={[rehypeRaw]}
+        rehypePlugins={[rehypeRaw, rehypeSlug]}
         components={{
           code: CodeBlock,
-          img({ src = "", alt, ...props }) {
-            const isRelative = !/^https?:\/+/.test(src);
+          img: ({ src = "", alt, ...props }) => {
+            const isRelative = !/^https?:\/+/.test(String(src));
             const baseUrl = markdownUrl.substring(0, markdownUrl.lastIndexOf("/") + 1);
             const finalSrc = isRelative ? baseUrl + src : src;
             return <img src={finalSrc} alt={alt} {...props} />;
