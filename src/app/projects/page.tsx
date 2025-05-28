@@ -1,11 +1,9 @@
-import Header from "../../components/Header"
 import Link from "next/link"
 import { projects } from "../../data/projects"
 
 export default function ProjectsPage() {
   return (
-    <div className="min-h-screen flex flex-col">
-      <Header />
+    <div className="flex flex-col">
       <main className="flex-1 max-w-4xl mx-auto px-4 py-16">
         <div className="space-y-8">
           {projects.map((project) => (

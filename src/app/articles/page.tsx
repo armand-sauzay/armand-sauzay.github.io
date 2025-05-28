@@ -1,11 +1,9 @@
-import Header from "../../components/Header"
 import Link from "next/link"
 import { articles } from "../../data/articles"
 
 export default function ArticlesPage() {
   return (
-    <div className="min-h-screen flex flex-col">
-      <Header />
+    <div className="flex flex-col">
       <main className="flex-1 max-w-4xl mx-auto px-4 py-16">
         <div className="space-y-8">
           {articles.map((article) => (
@@ -29,4 +27,4 @@ export default function ArticlesPage() {
       </main>
     </div>
   )
-} 
+}
