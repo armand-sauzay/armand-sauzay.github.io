@@ -1,0 +1,20 @@
+{{ define "header" }}
+{{ partial "header.html" . }}
+{{ end }}
+
+{{ define "main" }}
+<div class="flex-1 flex items-center justify-center">
+  <div class="w-full max-w-5xl mx-auto px-4 flex flex-col items-center">
+    <h1 class="text-7xl font-bold text-green-800 mb-4 text-center">
+      Hi, I'm Armand <span>👋</span>.
+    </h1>
+    <p class="text-xl text-gray-500 text-center">
+      I'm a software engineer passionate about building ML solutions.
+    </p>
+  </div>
+</div>
+{{ end }}
+
+{{ define "footer" }}
+{{ partial "footer.html" . }}
+{{ end }}

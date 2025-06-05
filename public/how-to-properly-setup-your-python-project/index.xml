@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>How-to-Properly-Setup-Your-Python-Projects on My New Hugo Site</title>
+    <link>http://localhost:1313/how-to-properly-setup-your-python-project/</link>
+    <description>Recent content in How-to-Properly-Setup-Your-Python-Projects on My New Hugo Site</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/how-to-properly-setup-your-python-project/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:1313/how-to-properly-setup-your-python-project/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/how-to-properly-setup-your-python-project/readme/</guid>
+      <description>&lt;h1 id=&#34;how-to-properly-setup-your-python-project&#34;&gt;How to properly setup your Python project&lt;/h1&gt;&#xA;&lt;p&gt;This article is published on:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://medium.com/@armand-sauzay/how-to-properly-setup-your-python-project-c81f7036b766&#34;&gt;Medium&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://dev.to/armandsauzay/how-to-properly-setup-your-python-project-3fng&#34;&gt;Devto&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Industry best practices to kickstart your python project.&#xA;&lt;img src=&#34;images/front-david-clode.jpeg&#34; alt=&#34;How to properly setup your Python project&#34;&gt;&lt;/p&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;p&gt;As you start working on your python project, you will likely need to set it up&#xA;in a consistent and collaboration-friendly way. In this article, I&amp;rsquo;ll describe a&#xA;setup that works great for my projects. It includes many industry best practices&#xA;and aims at explaining how to install python, run automated checks in a GitOps&#xA;fashion and structure your project.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pre-Commit on Armand Sauzay</title>
+    <link>//localhost:1313/tags/pre-commit/</link>
+    <description>Recent content in Pre-Commit on Armand Sauzay</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 13 Jul 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/pre-commit/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pre-commit Checks to Format Your Files and Commit Messages</title>
+      <link>//localhost:1313/articles/pre-commit-checks/</link>
+      <pubDate>Wed, 13 Jul 2022 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/articles/pre-commit-checks/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;How many times have you seen a commit message like &amp;rsquo;test&amp;rsquo; or &amp;lsquo;modif&amp;rsquo; or &amp;lsquo;reran notebook&amp;rsquo;?&lt;/p&gt;&#xA;&lt;p&gt;Commit messages can be very useful and their format can help get the relevant information in a simple look. This is what conventional commits is trying to achieve: standardize the commit format to be able to navigate through commits easily and understand what code update they were associated to. But how could we make sure all commits followed this format?&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

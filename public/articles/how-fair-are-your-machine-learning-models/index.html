@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8" />
+  <title>Armand Sauzay</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  
+  <link rel="stylesheet" href="/css/output.css">
+  
+  
+  <link rel="stylesheet" href="/css/syntax.css">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="min-h-screen flex flex-col font-sans">
+  <header>
+  <div class="max-w-5xl mx-auto flex items-center justify-between px-6 py-5 border-b border-gray-200">
+    <a href="/" class="text-green-800 font-bold text-xl hover:text-green-900">armandsauzay</a>
+    <nav class="flex items-center space-x-8">
+      <a href="/articles" class="flex items-center gap-1 text-gray-700 hover:text-green-800">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-open-icon lucide-book-open"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>
+        Articles
+      </a>
+      <a href="/projects" class="flex items-center gap-1 text-gray-700 hover:text-green-800">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code-xml-icon lucide-code-xml"><path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/></svg>
+        Projects
+      </a>
+      <a href="/creative-lab" class="flex items-center gap-1 text-gray-700 hover:text-green-800">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-brain-icon lucide-brain"><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"/><path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"/><path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4"/><path d="M17.599 6.5a3 3 0 0 0 .399-1.375"/><path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"/><path d="M3.477 10.896a4 4 0 0 1 .585-.396"/><path d="M19.938 10.5a4 4 0 0 1 .585.396"/><path d="M6 18a4 4 0 0 1-1.967-.516"/><path d="M19.967 17.484A4 4 0 0 1 18 18"/></svg>
+        Creative Lab
+      </a>
+    </nav>
+  </div>
+</header>
+  <main class="flex flex-1 flex-col">
+    
+<article class="mx-auto px-6 py-8" style="max-width: 44rem;">
+  <header class="mb-12">
+    <h1 class="text-4xl font-bold text-gray-900 mb-6">How Fair are Your Machine Learning Models?</h1>
+    
+    
+    
+    
+    
+    <div class="mb-6">
+      
+<div class="flex items-center text-sm text-gray-500">
+  <span>13 Jul 2022</span>
+  <span class="px-2">•</span>
+  <span>6 min read</span>
+  
+  <span class="px-2">•</span>
+  <div class="flex flex-wrap gap-2">
+    
+    <span class="bg-gray-100 px-2 py-1 rounded text-xs">machinelearning</span>
+    
+    <span class="bg-gray-100 px-2 py-1 rounded text-xs">fairness</span>
+    
+  </div>
+  
+</div>
+    </div>
+  </header>
+  
+  <div class="article-content">
+    <p>A quick introduction to the topic of fairness with hands on coding. Evaluate your machine learning model fairness in just a few lines of code.</p>
+<p>Are Machine Learning models &ldquo;fair&rdquo;? When increasingly more decisions are backed by ML algorithms, it becomes important to understand the biases they can create.</p>
+<p>But what does &ldquo;fairness&rdquo; mean? This is where it gets a little political (and mathematical)… To illustrate our thoughts, we&rsquo;ll take the example of a machine learning model which predicts whether a salary should be higher than 50K/year based on a number of features including <strong>age</strong> and <strong>gender</strong>.</p>
+<p>And maybe you&rsquo;ve already guessed, by looking at these two features, that fairness can have different definitions. Fair for <strong>gender</strong> might mean that we want to have the a prediction which is independent of gender (i.e. paying the same people who only differ by their gender). Fair for <strong>age</strong> might mean something else. We&rsquo;d probably want to allow a certain correlation between the prediction and the age, as it seems fair to pay better older individuals (which usually are more experienced).</p>
+<p>One key thing to understand is that what is judged &ldquo;fair&rdquo; is sometimes not even respected in the data itself.</p>
+<blockquote>
+<p>How would the model learn that men and women should be paid the same at equal levels it it does not observe this in the data itself ?</p></blockquote>
+<p><img src="https://miro.medium.com/max/1400/1*W_rBWQ-Z1Mw3sE43lDfNLw.webp" alt="data biases vs model biases"></p>
+<p align="center"> Figure1: data biases vs model biases </p>
+<p>Now that we have a bit of context on the problem, let&rsquo;s get into the math (Section 1) and the code (Sections 2 and 3)to be able to evaluate and address unfairness issues:</p>
+<ol>
+<li>
+<p>A few fairness concepts</p>
+</li>
+<li>
+<p>Evaluating Data Biases</p>
+</li>
+<li>
+<p>Evaluating and Correcting Model Biases with Fairlearn</p>
+<p>a. Evaluating bias</p>
+<p>b. Correcting bias</p>
+</li>
+</ol>
+<h2 id="1-a-few-fairness-concepts">1. A few fairness concepts</h2>
+<h3 id="11-mathematical-definition-of-fairness">1.1. Mathematical definition of fairness</h3>
+<p>In order to simplify things, we&rsquo;ll restrict the scope to binary classification (predict whether someone should be paid more than 50K/year).
+Usually, we&rsquo;ll call:</p>
+<ul>
+<li>X: the feature matrix</li>
+<li>Y: the target</li>
+<li>A: Sensitive feature, usually one of the columns of X</li>
+</ul>
+<p>For <strong>binary classification</strong>, two main definition of fairness exist:</p>
+<ul>
+<li><strong>Demographic parity</strong> (also known as statistical parity): A classifier h satisfies demographic parity under a distribution over (X,A,Y) if its prediction h(X) is statistically independent of the sensitive feature A. This is equivalent to: <code>E[h(X)|A=a]=E[h(X)]</code></li>
+<li><strong>Equalized odds</strong>: A classifier h satisfies equalized odds under a distribution over (X,A,Y) if its prediction h(X) is conditionally independent of the sensitive feature A given the label Y. This is equivalent to: <code>E[h(X)|A=a,Y=y]=E[h(X)|Y=y]</code></li>
+</ul>
+<blockquote>
+<p>NOTE: a third one exists but is more rarely used: <strong>equal opportunity</strong> is a relaxed version of equalized odds that only considers conditional expectations with respect to positive labels.</p></blockquote>
+<h3 id="12-fairness-in-words">1.2. Fairness in words</h3>
+<p>In &ldquo;simpler words&rdquo;:</p>
+<ul>
+<li><strong>Demographic parity</strong>: the prediction should be independent from the sensitive features (for instance independent from gender). It states that all categories from the protected feature should receive the positive outcome at the same rate (it plays on selection rate)</li>
+<li><strong>Equalized odds</strong>: the prediction can be correlated to the sensitive feature, to the extent it is explained by the data we see</li>
+</ul>
+<h3 id="13-why-does-it-matter">1.3. Why does it matter?</h3>
+<blockquote>
+<p>OK, that&rsquo;s interesting, but why does it matter? And how can I use those mathematical concepts?</p></blockquote>
+<p>→ Let&rsquo;s take two examples of features and then explain what type of fairness we want to have for this feature. Going back to the previous example of salary prediction, let&rsquo;s say you are the CEO of a very big company and want to build an algorithm which would give you the salary you should give to your employees based on performance indicators. Ideally you would look for something like:</p>
+<ul>
+<li>Demographic Parity for gender: the salary prediction should be independent from the gender</li>
+<li>Equalized Odds for Age: the salary prediction should not be independent from Age (you want to still pay more employees with more experience) but you still want to control that the salary so that you do not end up being too skewed → you don&rsquo;t want to end up in the situation where the algorithm exacerbates even more the inequalities (pays the youth even less and the elders even more)</li>
+</ul>
+<p>Without further due, let&rsquo;s get into the implementation details on how we can evaluate fairness and &ldquo;retrain&rdquo; our Machine Learning models against its biases. For this we&rsquo;re going to use the <a href="https://archive.ics.uci.edu/ml/datasets/adult">UCI Adult Dataset</a>.</p>
+<h2 id="2-evaluating-data-biases">2. Evaluating Data Biases</h2>
+<p><em>NOTE: once again, you can find all the associated code <a href="https://www.kaggle.com/code/armandsauzay/a-primer-on-fairness-with-fairlearn">here</a>.</em></p>
+<p>Biases can exist in the data itself. Let&rsquo;s just load the data and plot the percentage of Male/Female having a salary above 50K.</p>
+<p><img src="https://miro.medium.com/max/1106/1*dMFb4gM4LjtQ5TC52fBTVA.webp" width="400" height="400" /> <img src="https://miro.medium.com/max/896/1*d5GJ2Z7Yz3uom5ANr96yGQ.webp" width="400" height="400" /> </p>
+<p align="center"> Figure 2: gender and age impact on salary </p>
+<p>We see that the percentage of males having a salary above 50K is almost 3x the percentage of females. (!!)</p>
+<p>If the algorithm learns on this data it will definitely be biased. To counter this bias we can either:</p>
+<ol>
+<li>cherry pick data so that the percentage of male</li>
+<li>use fairlearn to correct the bias after the model is trained on this unfair data</li>
+</ol>
+<p>In section 3, we&rsquo;ll focus on the second approach.</p>
+<h2 id="3-evaluating-and-correcting-model-biases-with-fairlearn">3. Evaluating and Correcting Model Biases with Fairlearn</h2>
+<h3 id="31-evaluating-bias">3.1. Evaluating bias</h3>
+<p>One of the most interesting features here is probably <strong>selection rate</strong>. It is the rate of predicting positive outcomes (in this case, whether salary is above 50K)</p>
+<p align="center"> <img src="https://miro.medium.com/max/708/1*oflHCW6PPNRa2Eb0yAIjvA.webp" /> </p>
+<p align="center"> Figure 3: Selection Rate Definition </p>
+<p>Let&rsquo;s use MetricFrame from fairlearn to calculate the selection rates split by Sex.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">fairlearn.metrics</span> <span class="kn">import</span> <span class="n">MetricFrame</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span><span class="p">,</span><span class="n">precision_score</span><span class="p">,</span><span class="n">recall_score</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">GradientBoostingClassifier</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">fairlearn.metrics</span> <span class="kn">import</span> <span class="n">selection_rate</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">fairlearn.reductions</span> <span class="kn">import</span> <span class="n">ExponentiatedGradient</span><span class="p">,</span> <span class="n">DemographicParity</span>
+</span></span><span class="line"><span class="cl"><span class="n">classifier</span> <span class="o">=</span> <span class="n">GradientBoostingClassifier</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">classifier</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">y_pred</span> <span class="o">=</span> <span class="n">classifier</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">metrics</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;accuracy&#39;</span><span class="p">:</span> <span class="n">accuracy_score</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;precision&#39;</span><span class="p">:</span> <span class="n">precision_score</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;recall&#39;</span><span class="p">:</span> <span class="n">recall_score</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;selection_rate&#39;</span><span class="p">:</span> <span class="n">selection_rate</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="n">metric_frame</span> <span class="o">=</span> <span class="n">MetricFrame</span><span class="p">(</span><span class="n">metrics</span><span class="o">=</span><span class="n">metrics</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                           <span class="n">y_true</span><span class="o">=</span><span class="n">y</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                           <span class="n">y_pred</span><span class="o">=</span><span class="n">y_pred</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                           <span class="n">sensitive_features</span><span class="o">=</span><span class="n">sex</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">metric_frame</span><span class="o">.</span><span class="n">by_group</span><span class="p">[</span><span class="s1">&#39;selection_rate&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">color</span><span class="o">=</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Selection Rate split by Sex&#39;</span><span class="p">)</span>
+</span></span></code></pre></div><p><img src="https://miro.medium.com/max/1400/1*ILbeO5Vn4AsXPfgEZeLCiA.webp" alt="Selection Rate Split by Sex"></p>
+<p align='center'> Figure 4: Selection Rate Split by Sex </p>
+<p>We see that the percentage of males having a salary above 50K is almost 3x the percentage of females. (!!)
+Once the model is trained we see that this ratio is now 5x (!!). The model is exacerbating the bias we see in the data.</p>
+<h3 id="32-correcting-bias">3.2. Correcting bias</h3>
+<p>Let&rsquo;s now correct the bias we observe by applying Demographic Parity on our classifier (we use ExponentiatedGradient from fairlearn for this). More context on how it works behind the scene can be found on the official fairlearn documentation here.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>  <span class="c1"># set seed for consistent results with ExponentiatedGradient</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">constraint</span> <span class="o">=</span> <span class="n">DemographicParity</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">classifier</span> <span class="o">=</span> <span class="n">GradientBoostingClassifier</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">mitigator</span> <span class="o">=</span> <span class="n">ExponentiatedGradient</span><span class="p">(</span><span class="n">classifier</span><span class="p">,</span> <span class="n">constraint</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">mitigator</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">sensitive_features</span><span class="o">=</span><span class="n">sex</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">y_pred_mitigated</span> <span class="o">=</span> <span class="n">mitigator</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">sr_mitigated</span> <span class="o">=</span> <span class="n">MetricFrame</span><span class="p">(</span><span class="n">metrics</span><span class="o">=</span><span class="n">selection_rate</span><span class="p">,</span> <span class="n">y_true</span><span class="o">=</span><span class="n">y</span><span class="p">,</span> <span class="n">y_pred</span><span class="o">=</span><span class="n">y_pred_mitigated</span><span class="p">,</span> <span class="n">sensitive_features</span><span class="o">=</span><span class="n">sex</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">sr_mitigated</span><span class="o">.</span><span class="n">overall</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">sr_mitigated</span><span class="o">.</span><span class="n">by_group</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">metric_frame_mitigated</span> <span class="o">=</span> <span class="n">MetricFrame</span><span class="p">(</span><span class="n">metrics</span><span class="o">=</span><span class="n">metrics</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                           <span class="n">y_true</span><span class="o">=</span><span class="n">y</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                           <span class="n">y_pred</span><span class="o">=</span><span class="n">y_pred_mitigated</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                           <span class="n">sensitive_features</span><span class="o">=</span><span class="n">sex</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">metric_frame_mitigated</span><span class="o">.</span><span class="n">by_group</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="n">subplots</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">layout</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">    <span class="n">legend</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">figsize</span><span class="o">=</span><span class="p">[</span><span class="mi">12</span><span class="p">,</span> <span class="mi">8</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">    <span class="n">title</span><span class="o">=</span><span class="s2">&#34;Show all metrics&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="p">)</span>
+</span></span></code></pre></div><p><img src="https://miro.medium.com/max/1400/1*9x24g1w-4HVrLr4nNQEPvw.webp" alt="Selection rate for original model vs mitigated one"></p>
+<p align='center'> Figure 5: Selection rate for original model vs mitigated one </p>
+<p>By mitigating the model we introduced demographic parity (and thus equal selection rates) for our new model. Our model is now fair!</p>
+<p>Sources:</p>
+<ul>
+<li><a href="https://fairlearn.org/">https://fairlearn.org/</a></li>
+</ul>
+
+  </div>
+</article>
+
+  </main>
+  <footer class="py-5 text-center text-gray-500 text-sm mt-auto">
+  <div class="mx-auto flex justify-center items-center gap-8 px-4">
+    <div class="flex gap-8 items-center">
+      <a href="https://github.com/armandsauzay" target="_blank" class="text-gray-500 hover:text-green-800" aria-label="GitHub">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github-icon lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+      </a>
+      <a href="https://linkedin.com/in/armandsauzay" target="_blank" class="text-gray-500 hover:text-green-800" aria-label="LinkedIn">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin-icon lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+      </a>
+      <a href="mailto:sauzayarmand@gmail.com" class="text-gray-500 hover:text-green-800" aria-label="Email">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail-icon lucide-mail"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+      </a>
+    </div>
+    <div class="font-medium text-sm">© armandsauzay</div>
+  </div>
+</footer>
+</body>
+</html>

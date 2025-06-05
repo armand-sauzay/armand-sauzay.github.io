@@ -1,0 +1,14 @@
+<!-- Metadata: date, reading time, and tags -->
+<div class="flex items-center text-sm text-gray-500">
+  <span>{{ .Date.Format "2 Jan 2006" }}</span>
+  <span class="px-2">•</span>
+  <span>{{ .ReadingTime }} min read</span>
+  {{ if .Params.tags }}
+  <span class="px-2">•</span>
+  <div class="flex flex-wrap gap-2">
+    {{ range .Params.tags }}
+    <span class="bg-gray-100 px-2 py-1 rounded text-xs">{{ . }}</span>
+    {{ end }}
+  </div>
+  {{ end }}
+</div>

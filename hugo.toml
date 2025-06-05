@@ -1,0 +1,35 @@
+baseURL = '/'
+languageCode = 'en-us'
+title = 'Armand Sauzay'
+
+[markup]
+  [markup.highlight]
+    style = 'github'
+    noClasses = false
+    guessSyntax = true
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[params]
+  [params.markup]
+    [params.markup.highlight]
+      style = 'github'
+
+[build]
+  writeStats = true
+
+[build.assets]
+  [build.assets.postcss]
+    enabled = true
+    
+# Enable asset processing
+[markup.goldmark.extensions]
+  linkify = true
+  strikethrough = true
+  table = true
+  taskList = true
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
