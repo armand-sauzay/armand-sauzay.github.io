@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8" />
+  <title>Armand Sauzay</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  
+  <link rel="stylesheet" href="/css/output.css">
+  
+  
+  <link rel="stylesheet" href="/css/syntax.css">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="min-h-screen flex flex-col font-sans">
+  <header>
+  <div class="max-w-5xl mx-auto flex items-center justify-between px-6 py-5 border-b border-gray-200">
+    <a href="/" class="text-green-800 font-bold text-xl hover:text-green-900">armandsauzay</a>
+    <nav class="flex items-center space-x-8">
+      <a href="/articles" class="flex items-center gap-1 text-gray-700 hover:text-green-800">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-open-icon lucide-book-open"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>
+        Articles
+      </a>
+      <a href="/projects" class="flex items-center gap-1 text-gray-700 hover:text-green-800">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code-xml-icon lucide-code-xml"><path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/></svg>
+        Projects
+      </a>
+      <a href="/creative-lab" class="flex items-center gap-1 text-gray-700 hover:text-green-800">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-brain-icon lucide-brain"><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"/><path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"/><path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4"/><path d="M17.599 6.5a3 3 0 0 0 .399-1.375"/><path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"/><path d="M3.477 10.896a4 4 0 0 1 .585-.396"/><path d="M19.938 10.5a4 4 0 0 1 .585.396"/><path d="M6 18a4 4 0 0 1-1.967-.516"/><path d="M19.967 17.484A4 4 0 0 1 18 18"/></svg>
+        Creative Lab
+      </a>
+    </nav>
+  </div>
+</header>
+  <main class="flex flex-1 flex-col">
+    
+<article class="mx-auto px-6 py-8" style="max-width: 44rem;">
+  <header class="mb-12">
+    <h1 class="text-4xl font-bold text-gray-900 mb-6">A Beginner&#39;s Guide to Cryptography</h1>
+    
+    
+    
+    
+    
+    <div class="mb-6">
+      
+<div class="flex items-center text-sm text-gray-500">
+  <span>13 Feb 2023</span>
+  <span class="px-2">•</span>
+  <span>9 min read</span>
+  
+  <span class="px-2">•</span>
+  <div class="flex flex-wrap gap-2">
+    
+    <span class="bg-gray-100 px-2 py-1 rounded text-xs">cryptography</span>
+    
+  </div>
+  
+</div>
+    </div>
+  </header>
+  
+  <div class="article-content">
+    <p>What&rsquo;s cryptography? What does hashing and public-key encryption mean? And which tool can you use to start writing cryptography code?</p>
+<p>You probably heard the name cryptography a lot recently, especially during the cryptocurrency bull market of 2021, or with the recent FTX saga. But what does it really mean? Is it useful? And how can you start using some cryptography yourself?</p>
+<p>As always, we&rsquo;ll go through a little bit of theory and the concepts behind before diving into some code to give a concrete example. <strong>As Steve Jobs once said:</strong></p>
+<blockquote>
+<p>The doers are the major thinkers. The people that really create the things that change this industry are both the thinker-doer in one person. And if we really go back and we examine, you know, did Leonardo have a guy off to the side that was thinking 5 years out in the future what he would paint or the technology he would use to paint it. Of course not. Leonardo was the artist, but he also mixed all his own paint. He also was a fairly good chemist, knew about pigments, knew about human anatomy. And combining all of those skills together, the art and the science, the thinking and the doing, was what resulted in the exceptional results.</p></blockquote>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ol>
+<li><a href="#1-cryptography">Cryptography</a></li>
+<li><a href="#2-hashing">Hashing</a></li>
+<li><a href="#3-public-key-cryptography-and-ssh">Public key cryptography (and ssh)</a></li>
+<li><a href="#4-using-gpg-to-create-a-key-pair-and-encryptingdecrypting-documents">Using gpg to create a key pair and encrypting/decrypting documents</a></li>
+</ol>
+<hr>
+<h2 id="1-cryptography">1. Cryptography</h2>
+<h3 id="11-real-world-usecases">1.1. Real world use cases</h3>
+<p>Cryptography, in short, is a set of techniques to enable secure communication through encoding and decoding messages. More generally, cryptography is about constructing and analyzing protocols that prevent third parties or the public from reading private messages. It is mainly used for the following:</p>
+<ul>
+<li>securing personal information: most web applications use cryptography to encrypt messages and the data they store, and hide their services and APIs from the general public.</li>
+<li>as the base layer of crypto/blockchain. And you don&rsquo;t have to go further than the second page of Satoshi Nakamoto&rsquo;s original paper on bitcoin (read more <a href="https://bitcoin.org/bitcoin.pdf">here</a>) to understand that cryptography is central in the blockchain/crypto field.</li>
+</ul>
+<h3 id="12-web2-vsweb3">1.2. Web2 vs Web3</h3>
+<blockquote>
+<p>So, most of the &ldquo;tech&rdquo; we know relies on cryptography: if you&rsquo;re a <strong>Web2</strong> aficionado, you trust that companies will correctly protect your data through encrypting the &ldquo;username&rdquo; and &ldquo;password&rdquo; required to access their databases (these are usually not user and password per say but can be access keys). And if you&rsquo;re a <strong>Web3</strong> aficionado you trust yourself with keeping your &ldquo;username&rdquo; and &ldquo;password&rdquo; (or public and private keys) secret to yourself.</p></blockquote>
+<p>And how you keep things <strong>secret</strong> is through cryptography:</p>
+<ul>
+<li>have an input</li>
+<li>Run a function on it to encode it.</li>
+<li>Potentially run another function to then decode the encoded message.</li>
+</ul>
+<p><strong><p align = center>roughly, cryptography = encryption + decryption <p></strong></p>
+<h3 id="13-symmetric-and-asymmetric-cryptography">1.3. Symmetric and asymmetric cryptography</h3>
+<p>Popular encryption algorithm include the <a href="https://medium.com/r/?url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FCaesar_cipher">Caesar cipher</a> (shift all the letters by one or more characters, i.e. a becomes b, b becomes c, etc.), or <a href="https://en.wikipedia.org/wiki/Pig_Latin">Pig Latin</a> (adding a suffix to each syllab) which you might know. It is also useful to distinguish between symmetric and asymmetric cryptography:</p>
+<ul>
+<li>
+<p><strong>Symmetric cryptography</strong>: the same key is used to encrypt and decrypt the message. This is the most common type of cryptography and is used in most applications. The most popular symmetric cryptography algorithm is AES (Advanced Encryption Standard) which is used in most applications. <strong>In symmetric cryptography: encryption = decryption</strong></p>
+</li>
+<li>
+<p><strong>Asymmetric cryptography</strong>: the key used to encrypt the message is different from the key used to decrypt the message. This is the most common type of cryptography used in the blockchain/crypto field. The most popular asymmetric cryptography algorithm is RSA (Rivest–Shamir–Adleman) which is used in most applications. <strong>In asymmetric cryptography: encryption ≠ decryption</strong></p>
+</li>
+</ul>
+<p>In this article we&rsquo;ll only cover <strong>asymmetric cryptography</strong> and cover two main ideas that are the foundation of most applications: (1) hashing and (2) public-key cryptography.</p>
+<h2 id="2-hashing">2. Hashing</h2>
+<h3 id="21-core-concept-behind-hashing">2.1. Core concept behind hashing</h3>
+<p>Hashing is the simplest cryptographic process: you take an input (an image, text, any data basically) and you make it go through a hashing process to create an encrypted message. One of the most used algorithm is SHA-256 (which was developed by the NSA): it will create a &ldquo;random&rdquo; 64 character long string from any input.</p>
+<p><img src="https://cdn-images-1.medium.com/max/1600/1*6r7_AuWfh9-VcqetWaJ2vA.png" alt="illustration of hashing (image by author)"></p>
+<p align=center> illustration of hashing (image by author) </p>
+<h3 id="22-a-slight-difference-in-inputs-can-lead-to-completely-different-outputs">2.2. A slight difference in inputs can lead to completely different outputs</h3>
+<p>Below, you can see how the two strings &ldquo;hello world&rdquo; and &ldquo;Hello world&rdquo; are hashed with the SHA-256 algorithm. Notice the very slight difference on the first letter being capitalized or not but the huge difference in the encrypted messages… You can try it out for yourself here.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">Hello world → b94d27b9934d3e08a52e52d7da7dabfac484efe37a5380ee9088f7ace2efcde9
+</span></span><span class="line"><span class="cl">hello world → 64ec88ca00b268e5ba1a35678a1b5316d212f4f366b2477232534a8aeca37f3c
+</span></span></code></pre></div><h3 id="23-why-is-this-useful">2.3. Why is this useful?</h3>
+<blockquote>
+<p>Hashing is a one way function. It is easy to go from message to encrypted message but almost impossible to do the opposite.</p></blockquote>
+<p>Well, good. But why is this useful?</p>
+<p>→ Let&rsquo;s say you have a website and you are storing all the passwords of all your users. You wouldn&rsquo;t want to store them plainly in a datafile (assuming you&rsquo;re a little concerned about those passwords getting leaked…), right? So you could probably hash them with a specific algorithm. When someone signs up on your website, you&rsquo;ll hash their password and store the hashed password. And if that same someone tries to log in with their password, you hash the their login password input and compare it to the original hash of their password when they signed up. If the 2 hashes match (the hash from the original password and the hash from the login input) , you let the user in. And if someone gains access to the database with all the hashed passwords of all the users, you&rsquo;ll be safe because they would not be able to log in with that information!
+But sometimes it would be nice to also be able to decode right? Let&rsquo;s say you&rsquo;re sending a hashed love letter to your lover (with SHA-256 once again)</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">I love you → c33084feaa65adbbbebd0c9bf292a26ffc6dea97b170d88e501ab4865591aafd
+</span></span></code></pre></div><p>Your lover wouldn&rsquo;t really know what to do with <code>c33084feaa65adbbbebd0c9bf292a26ffc6dea97b170d88e501ab4865591aafd</code> would they?</p>
+<p>This is where public-key cryptography can be useful.</p>
+<h2 id="3-public-key-cryptography">3. Public-key cryptography</h2>
+<h3 id="31-public-key-vs-private-key-and-their-respective-roles">3.1. Public key vs Private key and their respective roles</h3>
+<p>In public-key cryptography, there is a set of keys consisting of two keys: a public key and a private key. Both of these keys are one-way functions meaning that they are not interchangeable: the public key is used to encrypt and the private key is used to decrypt. And the security of the process is guaranteed as long as the private key is kept secret.</p>
+<p><img src="https://cdn-images-1.medium.com/max/1600/1*ggsr_Z3I_ngtwcroEDpVAg.png" alt="illustration of public-key encryption (image by author)"></p>
+<p align=center> illustration of public-key encryption (image by author) </p>
+<p>This is a powerful concept: only those with the private key would be able to decrypt messages encoded with the public key. This opens up the door for many possible applications. I can create a key pair, send the public key to everyone and keep the private key to myself. People could encrypt the messages they want to send me with the public key and publish it somewhere (in a journal, on social media, whatever). And I will be the only one to be able to decrypt the encoded message.</p>
+<h3 id="32-digital-signature">3.2. Digital Signature</h3>
+<p>Another very central concept in cryptography is <strong>digital signature</strong>, which is basically proving that you own the private key associated with a public key without sharing the private key. For example, let&rsquo;s say that you have shared a public key (with which anyone can can encrypt a message with). Someone encrypts a message with your public key and sends the encrypted message to you. If you can decrypt the encrypted message they sent, you have proved that you own the private key associated with the public one. This is how digital signature work. You now know the base layer of Bitcoin for instance since showing that you own the private key associated with your public Bitcoin address is a process very similar to what we just described.</p>
+<h3 id="33-bonus-ssh">3.3. Bonus: ssh</h3>
+<p>SSH (Secure Shell) keys are a way to authenticate a user&rsquo;s access to a remote server. They allow users to log in to a remote server without the need to enter a password.</p>
+<p>SSH keys consist of a public key and a private key. The public key is used to encrypt data that is sent from the client to the server, and the private key is used to decrypt the data.
+To use an SSH key for authentication, the user generates a key pair on their local machine and then adds the public key to the authorized_keys file on the remote server. When the user attempts to log in to the server, the server sends a challenge message to the client, which the client encrypts using the private key and sends back to the server. If the server can decrypt the message using the public key, the user is authenticated and granted access to the server.</p>
+<p>SSH keys are a secure and convenient way to authenticate access to a remote server, as they do not rely on the user remembering a password and they can be revoked or replaced easily if necessary.</p>
+<p>The concept is nice, right? <em>But how can you apply the theory and start using it in code?</em></p>
+<h2 id="4-using-gpg-to-create-a-key-pair-and-encryptingdecrypting-documents">4. Using gpg to create a key pair and encrypting/decrypting documents</h2>
+<p>One of the nice tools for playing around with public and private keys is gnupg with the gpg CLI (you can read more <a href="https://gnupg.org/">here</a>).</p>
+<p>The goal is not to give an extensive overview of gpg but let&rsquo;s see a simple example to realize typical steps (key pair creation and encrypting/decrypting).</p>
+<p>As always you can check out the associated code on GitHub and follow along if you want. This basically consists in three steps:</p>
+<ul>
+<li>creating a key pair.</li>
+<li>encoding the document with the public key.</li>
+<li>decrypting the encoded document with the private key.</li>
+</ul>
+<h3 id="41-having-a-secret-messagedocument">4.1. Having a secret message/document</h3>
+<p>Let&rsquo;s say you have a private message in a document like:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt"><span class="line"><span class="cl">#secret_message.txt
+</span></span><span class="line"><span class="cl">The Navy UFO videos weren&#39;t supposed to be released.
+</span></span></code></pre></div><h3 id="42-generating-a-keypair">4.2. Generating a key pair</h3>
+<p>You could begin by generating a key pair and storing the public and private key as follows:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">read</span> -r -p <span class="s2">&#34;What is your key name? &#34;</span> KEY_NAME 
+</span></span><span class="line"><span class="cl">gpg --full-generate-key <span class="c1">#then follow the prompts</span>
+</span></span><span class="line"><span class="cl">gpg --export -a <span class="nv">$KEY_NAME</span> &gt; <span class="si">${</span><span class="nv">KEY_NAME</span><span class="si">}</span>.public.key
+</span></span><span class="line"><span class="cl">gpg --export-secret-key -a <span class="nv">$KEY_NAME</span> &gt; <span class="si">${</span><span class="nv">KEY_NAME</span><span class="si">}</span>.private.key
+</span></span></code></pre></div><h3 id="43-encrypting-your-message-with-the-publickey">4.3. Encrypting your message with the public key</h3>
+<p>Then, using gpg &ndash;encrypt you could encrypt your message using the following commands:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">read</span> -r -p <span class="s2">&#34;What is your key name? &#34;</span> KEY_NAME
+</span></span><span class="line"><span class="cl">gpg --import <span class="si">${</span><span class="nv">KEY_NAME</span><span class="si">}</span>.public.key
+</span></span><span class="line"><span class="cl">gpg --encrypt secret_message.txt
+</span></span></code></pre></div><h3 id="44-decrypting-your-message-with-your-privatekey">4.4. Decrypting your message with your private key</h3>
+<p>Finally, using gpg &ndash;decrypt you can use the private key to decrypt the message that you just encoded to verify that the encryption/decryption worked well.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">gpg --decrypt secret_message.txt.gpg
+</span></span></code></pre></div><p>This covers the basics of cryptography. You&rsquo;ve created a key pair, encrypted and then decrypted your message using gpg.</p>
+
+  </div>
+</article>
+
+  </main>
+  <footer class="py-5 text-center text-gray-500 text-sm mt-auto">
+  <div class="mx-auto flex justify-center items-center gap-8 px-4">
+    <div class="flex gap-8 items-center">
+      <a href="https://github.com/armandsauzay" target="_blank" class="text-gray-500 hover:text-green-800" aria-label="GitHub">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github-icon lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+      </a>
+      <a href="https://linkedin.com/in/armandsauzay" target="_blank" class="text-gray-500 hover:text-green-800" aria-label="LinkedIn">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin-icon lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+      </a>
+      <a href="mailto:sauzayarmand@gmail.com" class="text-gray-500 hover:text-green-800" aria-label="Email">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail-icon lucide-mail"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+      </a>
+    </div>
+    <div class="font-medium text-sm">© armandsauzay</div>
+  </div>
+</footer>
+</body>
+</html>

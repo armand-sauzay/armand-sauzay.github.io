@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Machine-Learning on Armand Sauzay</title>
+    <link>//localhost:1313/tags/machine-learning/</link>
+    <description>Recent content in Machine-Learning on Armand Sauzay</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 13 Jul 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How fair are your machine learning models?</title>
+      <link>//localhost:1313/articles/how-fair-are-your-machine-learning-models/</link>
+      <pubDate>Wed, 13 Jul 2022 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/articles/how-fair-are-your-machine-learning-models/</guid>
+      <description>&lt;p&gt;A quick introduction to the topic of fairness with hands on coding. Evaluate your machine learning model fairness in just a few lines of code.&lt;/p&gt;&#xA;&lt;p&gt;Are Machine Learning models &amp;ldquo;fair&amp;rdquo;? When increasingly more decisions are backed by ML algorithms, it becomes important to understand the biases they can create.&lt;/p&gt;&#xA;&lt;p&gt;But what does &amp;ldquo;fairness&amp;rdquo; mean? This is where it gets a little political (and mathematical)… To illustrate our thoughts, we&amp;rsquo;ll take the example of a machine learning model which predicts whether a salary should be higher than 50K/year based on a number of features including &lt;strong&gt;age&lt;/strong&gt; and &lt;strong&gt;gender&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,36 +1,32 @@
 {
-  "name": "armand-sauzay.github.io",
-  "version": "0.1.0",
-  "private": true,
+  "name": "my-portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio website built with Hugo and Tailwind CSS",
+  "main": "index.js",
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "npm run dev:css & npm run dev:hugo",
+    "dev:css": "npx @tailwindcss/cli -i ./assets/css/input.css -o ./assets/css/output.css --watch",
+    "dev:hugo": "hugo server -D --disableFastRender",
+    "build": "npm run build:css && npm run build:hugo",
+    "build:css": "npx @tailwindcss/cli -i ./assets/css/input.css -o ./assets/css/output.css --minify",
+    "build:hugo": "hugo --gc --minify",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies": {
-    "lucide-react": "^0.475.0",
-    "next": "15.1.6",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "react-markdown": "^10.1.0",
-    "react-syntax-highlighter": "^15.6.1",
-    "rehype-raw": "^7.0.0",
-    "rehype-slug": "^6.0.0",
-    "remark-gfm": "^4.0.1"
-  },
+  "keywords": [
+    "hugo",
+    "tailwindcss",
+    "portfolio",
+    "website"
+  ],
+  "author": "Armand Sauzay",
+  "license": "ISC",
   "devDependencies": {
-    "@eslint/eslintrc": "^3",
+    "@tailwindcss/cli": "^4.1.8",
+    "@tailwindcss/postcss": "^4.1.8",
     "@tailwindcss/typography": "^0.5.16",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "@types/react-syntax-highlighter": "^15.5.13",
-    "autoprefixer": "^10.4.20",
-    "eslint": "^9",
-    "eslint-config-next": "15.1.6",
-    "postcss": "^8.5.1",
-    "tailwindcss": "^3.4.17",
-    "typescript": "^5"
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.3",
+    "postcss-cli": "^11.0.1",
+    "tailwindcss": "^4.1.8"
   }
 }
