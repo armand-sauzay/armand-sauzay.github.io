@@ -2,7 +2,7 @@
 title: "Which Data Format to Use For Your Big Data Project?"
 date: 2023-10-26
 description: "Pickle, Parquet, CSV, Feather, HDF5, ORC, JSON: which one should you be using and why?"
-tags: ["data-science", "python", "performance", "big-data", "programming"]
+tags: ["data-science", "serialization"]
 ---
 
 Choosing the right data format is crucial in Data Science projects, impacting everything from data read/write speeds to memory consumption and interoperability. This article explores seven popular serialization/deserialization formats in Python, focusing on their speed and memory usage implications.
